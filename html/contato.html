@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sistemas Norteador - protótipo de aplicação web para lavação de automóveis</title>
+</head>
+
+<body>
+   <div class="container">
+
+
+      <header> <!--cabeçalho para os sites-->
+         <h1> Desenvolvimento Web - CTDS - Sistema Norteador</h1>
+      </header>
+
+
+      <!--secção de conteudo princinpal da pagina web, que não se repete em outras páginas-->
+      <main>
+         <form action="contato.php" method="post">
+            <fieldset>
+               <legend> Entre em contato conosco. </legend>
+
+               <div class="alinha">
+                  <label for="telefone"> Telefone: </label>
+                  <input type="text" id="telefone" name="telefone" placeholder="telefone" autofocus required>
+               </div>
+               <br>
+               
+               <div class="alinha"> <!--seção para caixa de Sugestão-->
+                  <label for="contato"> Deixe aqui sua sugestão: </label>
+                  <textarea name="contato" id="contato" placeholder="Sua sugestão aqui"></textarea>
+               </div>
+               <br>
+               
+               <!--seção do botão-->
+               <button type="submit" title="Enviar"> Enviar </button>
+
+            </fieldset>
+         </form>
+      </main>
+
+      <!--secção de rodapé da aplicação-->
+      <footer>
+         <div class="rodape">
+            <p>Desenvolvimento Web - CTDS - Web Design, turma do semetre 2025/1 <br>
+               Copyright &copy;2025 - todos os direitos reservados. Proibida a reprodução parcial ou total do conteúdo
+               presente nesta aplicação. <br>
+               <br>
+               <a href="home.html"> Voltar á página Inicial</a>
+            </p>
+         </div>
+      </footer>
+
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sistemas Norteador - protótipo de aplicação web para lavação de automóveis</title>
+</head>
+
+<body>
+   <div class="container">
+
+
+      <header> <!--cabeçalho para os sites-->
+         <h1> Desenvolvimento Web - CTDS - Sistema Norteador</h1>
+      </header>
+
+      <nav> <!--Área de navegação do site-->
+         <div class="menu"> <!--Um bloco com classe "menu", bom para aplicar estilos-->
+            <ul> <!--Lista não ordenada-->
+               <li> <!--Item da lista-->
+                  <a href="home.html"> Voltar á página Inicial</a>
+               </li>
+
+               <li>
+                  <a href="cadastro-cliente.html"> Voltar á página de Cadastro Cliente</a>
+               </li>
+
+               <li>
+                  <a href="login-cliente.html"> Login do Cliente </a>
+               </li>
+
+               <li>
+                  <a href="login-administrador.html"> Login do Administrador</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <!--secção de conteudo princinpal da pagina web, que não se repete em outras páginas-->
+      <main>
+         <form action="receber-dados-veiculos.php" method="post">
+            <fieldset>
+               <legend> Veiculos - cadastro </legend>
+
+               <div class="alinha">
+                  <label for="nome-fabricante" title="nome-fabricante"> Nome do fabricante: </label>
+                  <input type="text" name="nome-fabricante" id="nome-fabricante" placeholder="Nome do fabricante aqui"
+                     autofocus>
+               </div>
+               <br>
+               <div class="alinha">
+                  <label for="modelo" title="modelo"> Modelo: </label>
+                  <input type="text" name="modelo" id="modelo" placeholder="Modelo do veiculo">
+               </div>
+               <br>
+
+               <div class="alinha">
+                  <label for="placa" title="placa"> Placa: </label>
+                  <input type="text" name="placa" id="placa" placeholder="Placa do veiculo" maxlength="7" minlength="7"
+                     required>
+               </div>
+
+               <br>
+               <!--seção do botão-->
+               <button type="submit" title="cadastrar veiculo"> Cadastrar veiculo </button>
+
+            </fieldset>
+         </form>
+      </main>
+
+      <!--secção de rodapé da aplicação-->
+      <footer>
+         <div class="rodape">
+            <p>Desenvolvimento Web - CTDS - Web Design, turma do semetre 2025/1 <br>
+               Copyright &copy;2025 - todos os direitos reservados. Proibida a reprodução parcial ou total do conteúdo
+               presente nesta aplicação. <br>
+
+               <a href="contato.html" target="_blank"> Entre em contato conosco</a>
+            </p>
+         </div>
+      </footer>
+
+   </div>
+</body>
+
+</html>

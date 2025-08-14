@@ -1,0 +1,55 @@
+CREATE DATABASE SistemaNorteador;
+USE SistemaNorteador;
+CREATE TABLE Cliente
+(
+  id_cliente INT NOT NULL,
+  nome VARCHAR(50) NOT NULL,
+  tipo_pessoa VARCHAR(50) NOT NULL,
+  telefone VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id_cliente)
+);
+
+CREATE TABLE Veículo
+(
+  id_veiculo INT NOT NULL,
+  marca_ VARCHAR(50) NOT NULL,
+  modelo_ VARCHAR(50) NOT NULL,
+  categoria_ VARCHAR(50) NOT NULL,
+  id_cliente INT NOT NULL,
+  PRIMARY KEY (id_veiculo),
+  FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
+);
+
+CREATE TABLE Serviço
+(
+  id_servico_ INT NOT NULL,
+  descricao_ VARCHAR(100) NOT NULL,
+  valor_padrao DECIMAL(10,2) NOT NULL,
+  tarifa_por_categoria DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (id_servico_)
+);
+
+CREATE TABLE OrdemServico
+(
+  id_os INT NOT NULL,
+  data_ DATE NOT NULL,
+  status_ VARCHAR(50) NOT NULL,
+  total_ DECIMAL(10,2) NOT NULL,
+  desconto_ DECIMAL(10,2) NOT NULL,
+  id_veiculo INT NOT NULL,
+  PRIMARY KEY (id_os),
+  FOREIGN KEY (id_veiculo) REFERENCES Veículo(id_veiculo)
+);
+
+CREATE TABLE ItemServico
+(
+  id_item INT NOT NULL,
+  valor_cobrado DECIMAL(10,2) NOT NULL,
+  pontos_gerados INT NOT NULL,
+  id_servico_ INT NOT NULL,
+  id_os INT NOT NULL,
+  PRIMARY KEY (id_item),
+  FOREIGN KEY (id_servico_) REFERENCES Serviço(id_servico_),
+  FOREIGN KEY (id_os) REFERENCES OrdemServico(id_os)
+);

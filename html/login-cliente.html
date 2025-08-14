@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sistemas Norteador - protótipo de aplicação web para lavação de automóveis</title>
+</head>
+
+<body>
+   <div class="container">
+
+
+      <header> <!--cabeçalho para os sites-->
+         <h1> Desenvolvimento Web - CTDS - Sistema Norteador</h1>
+      </header>
+
+      <nav> <!--Área de navegação do site-->
+         <div class="menu"> <!--Um bloco com classe "menu", bom para aplicar estilos-->
+            <ul> <!--Lista não ordenada-->
+               <li> <!--Item da lista-->
+                  <a href="home.html"> Voltar á página Inicial</a>
+               </li>
+
+               <li>
+                  <a href="cadastro-cliente.html"> Voltar á página de Cadastro Cliente</a>
+               </li>
+
+               <li>
+                  <a href="cadastro-veiculo.html"> Voltar á página de Cadastro Veiculo </a>
+               </li>
+
+               <li>
+                  <a href="login-administrador.html"> Login do Administrador</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <!--secção de conteudo princinpal da pagina web, que não se repete em outras páginas-->
+      <main>
+         <form action="receber-dados-login-cliente.php" method="post">
+            <fieldset>
+               <legend> Cliente - login </legend>
+
+               <div class="alinha">
+                  <label for="login"> Login: </label>
+                  <input type="text" id="login" name="login" placeholder="Login" autofocus required>
+               </div>
+               <br>
+               
+               <div class="alinha">
+                  <label for="senha"> Senha: </label>
+                  <input type="password" id="senha" name="senha" required placeholder="Senha de 6 digitos" minlength="6" maxlength="6">
+
+               </div>
+               <br>
+               <!--seção do botão-->
+               <button type="submit" title="logar cliente"> Logar cliente </button>
+
+            </fieldset>
+         </form>
+      </main>
+
+      <!--secção de rodapé da aplicação-->
+      <footer>
+         <div class="rodape">
+            <p>Desenvolvimento Web - CTDS - Web Design, turma do semetre 2025/1 <br>
+               Copyright &copy;2025 - todos os direitos reservados. Proibida a reprodução parcial ou total do conteúdo
+               presente nesta aplicação. <br>
+
+               <a href="contato.html" target="_blank"> Entre em contato conosco</a>
+            </p>
+         </div>
+      </footer>
+
+   </div>
+</body>
+
+</html>

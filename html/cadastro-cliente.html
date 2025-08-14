@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sistemas Norteador - protótipo de aplicação web para lavação de automóveis</title>
+</head>
+
+<body>
+   <div class="container">
+
+
+      <header> <!--cabeçalho para os sites-->
+         <h1> Desenvolvimento Web - CTDS - Sistema Norteador</h1>
+      </header>
+
+      <nav> <!--Área de navegação do site-->
+         <div class="menu"> <!--Um bloco com classe "menu", bom para aplicar estilos-->
+            <ul> <!--Lista não ordenada-->
+               <li> <!--Item da lista-->
+                  <a href="home.html"> Voltar á página Inicial</a>
+               </li>
+
+               <li>
+                  <a href="cadastro-veiculo.html"> Cadastro Veiculo</a>
+               </li>
+
+               <li>
+                  <a href="login-cliente.html"> Login do Cliente </a>
+               </li>
+
+               <li>
+                  <a href="login-administrador.html"> Login do Administrador</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <!--secção de conteudo princinpal da pagina web, que não se repete em outras páginas-->
+      <main>
+         <form action="receber-dados-cliente.php" method="post">
+            <fieldset>
+               <legend> Clientes - cadastro </legend>
+               <br>
+               <div class="alinha">
+                  <label for="nome-cliente" title="nome-cliente"> Nome: </label>
+                  <input type="text" name="nome-cliente" id="nome-cliente" placeholder="Seu nome aqui" autofocus>
+               </div>
+               <br>
+               <div class="alinha">
+                  <label for="endereco" title="endereco"> Endereço: </label>
+                  <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+               </div>
+               <br>
+               <div class="alinha">
+                  <label for="email" title="email"> E-mail: </label>
+                  <input type="email" title="Email" placeholder="Email" name="email" id="email">
+               </div>
+               <br>
+               <div class="alinha">
+                  <label for="celular" title="celular"> Celular: </label>
+                  <input type="tel" title="celular" placeholder="Celular" id="celular" name="celular" required>
+               </div>
+               <br>
+
+               <div class="alinha">
+                  <label for="login"> Usuário: </label>
+                  <input type="text" id="login" name="login" placeholder="Login do usuário" required>
+               </div>
+               <br>
+               <div class="alinha">
+                  <label for="senha"> Senha: </label>
+                  <input type="password" name="senha" id="senha" placeholder="Senha de 6 digitos" maxlength="6" minlength="6" required>
+               </div>
+               <br>
+               <!--seção do botão-->
+               <button type="submit" title="cadastrar"> Cadastrar </button>
+
+            </fieldset>
+         </form>
+      </main>
+
+      <!--secção de rodapé da aplicação-->
+      <footer>
+         <div class="rodape">
+            <p>Desenvolvimento Web - CTDS - Web Design, turma do semetre 2025/1 <br>
+               Copyright &copy;2025 - todos os direitos reservados. Proibida a reprodução parcial ou total do conteúdo
+               presente nesta aplicação. <br>
+
+               <a href="contato.html" target="_blank"> Entre em contato conosco</a>
+            </p>
+         </div>
+      </footer>
+
+   </div>
+</body>
+
+</html>
