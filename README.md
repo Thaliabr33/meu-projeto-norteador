@@ -42,7 +42,7 @@ E diferentes categorias de veículos:
 ---
 
 ## 🚀 Como Executar
-1. Abra o projeto na IDE de sua preferência (**Intellij IDEA, VSCode ou outra**)  
+1. Abra o projeto na plataforma de sua preferência (**Intellij IDEA, VSCode ou outra**)  
 2. Compile os arquivos Java  
 3. Execute o sistema  
 4. Para interface web, abra os arquivos HTML no navegador.  
