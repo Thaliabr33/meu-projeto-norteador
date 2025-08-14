@@ -52,9 +52,9 @@ E diferentes categorias de veículos:
 ## 🧑‍💻 Autor
 - **Thalia de Lara Barbosa**
 
-- GitHub: @Thaliabr33
+- [GitHub] (https://github.com/Thaliabr33)
 
-- Linkedin: Thalia de Lara Barbosa
+- [Linkedin] (https://www.linkedin.com/in/thalia-de-lara-barbosa-711398368/)
 
 ---
 
